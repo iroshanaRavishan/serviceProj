@@ -1,0 +1,16 @@
+<p>work-details works!</p>
+
+    <li>{{workerDetails.success}}</li>
+    <li>{{workerDetails.message}}</li>
+    <li>{{workerDetails.data.update_date_time}}</li>
+    <li>{{workerDetails.data.local_new_cases}}</li>
+    <li>{{workerDetails.data.local_total_cases}}</li>
+    
+    <div *ngFor = "let pcr of workerDetails.data.daily_pcr_testing_data">
+        <ul>{{pcr.date}} - {{pcr.pcr_count}}</ul>
+    </div>
+        
+
+
+    
+  
